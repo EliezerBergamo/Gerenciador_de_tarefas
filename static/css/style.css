@@ -1,0 +1,342 @@
+:root {
+    --amarelo: #ecab0f;
+    --branco: #fff;
+    --branco-medio: #f7fafc;
+    --cinza-claro: #f2f2f2ff;
+    --cinza-escuro: #2d2d34ff;
+    --verde-claro: #99ffef;
+    --verde-medio: #05c98c;
+    --verde-escuro: #0ba311;
+    --vermelho: #9a0526;
+    --preto: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--verde-claro);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    height: 100%;
+}
+
+/* Utilitários */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: transparent;
+    backdrop-filter: blur(0.5rem);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+nav h1 {
+    color: var(--verde-escuro);
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+nav a img {
+    max-height: 50px;
+    margin: 1.5rem;
+}
+
+nav .logo img {
+    max-height: 50px;
+    margin: 1.5rem;
+}
+
+#navbar {
+    background-color: transparent;
+    backdrop-filter: blur(0.5rem);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#navbar h1 {
+    color: var(--verde-escuro);
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+#navbar .logo img {
+    max-height: 50px;
+    margin: 1.5rem;
+}
+
+/* Section: Login e registro */
+#login,
+#registro {
+    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login h2,
+#registro h2 {
+    text-align: justify;
+    color: var(--verde-escuro);
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+#login form,
+#registro form {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+#login form input[type="text"],
+#login form input[type="password"],
+#registro form input[type="text"],
+#registro form input[type="password"] {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--branco);
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#login form label,
+#registro form label {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--verde-escuro);
+}
+
+#login form input[type="submit"],
+#registro form input[type="submit"] {
+    background-color: var(--preto);
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    color: var(--branco);
+}
+
+#login form input[type="submit"]:hover,
+#registro form input[type="submit"]:hover {
+    background-color: var(--verde-escuro);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#login p {
+    text-align: justify;
+    color: var(--verde-escuro);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+#login a {
+    text-align: justify;
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+}
+
+/* Section: Add_task */
+#add_task {
+    padding: 15rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#add_task form {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+#add_task form button {
+    background-color: var(--preto);
+    border: 2px solid var(--preto);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    color: var(--branco);
+    margin-left: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#add_task form button:hover {
+    background-color: var(--verde-escuro);
+    border: 2px solid var(--verde-escuro);
+}
+
+#add_task input[type="text"] {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    background-color: var(--branco);
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add_task input[type="text"]::placeholder {
+    color: var(--preto);
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+/* Section: Tarefas */
+#tarefas {
+    padding: 0 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarefas h2 {
+    color: var(--branco);
+    font-weight: 500;
+    font-size: 3.5rem;
+    align-items: center;
+}
+
+#tarefas ul {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+#tarefas ul li {
+    background-color: var(--branco);
+    color: var(--preto);
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#tarefas ul li a {
+    max-height: 20px;
+    margin: 1.5rem;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#tarefas ul li a img {
+    max-height: 20px;
+    margin: 1.5rem;
+    background-color: transparent;
+    margin: 0;
+}
+
+#tarefas #completar {
+    margin-left: 40rem;
+}
+
+#tarefas #tarefas_01 {
+    background-color: var(--amarelo);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 0 1rem 2.5rem;
+    outline: none;
+    width: 66rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tarefas #tarefas_02 {
+    background-color: var(--verde-escuro);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 0 1rem 2.5rem;
+    outline: none;
+    width: 66rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tarefas #tarefas_03 {
+    background-color: var(--vermelho);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 0 1rem 2.5rem;
+    outline: none;
+    width: 66rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: var(--verde-escuro);
+    font-size: 2rem;
+}
+
+footer .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    max-height: 50px;
+    margin: 1.5rem;
+}

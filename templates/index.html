@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block content %}
+<nav class="container">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='assets/logo.png') }}" />
+    </div>
+    <h1>Gerenciador de tarefas</h1>
+    <a href="{{ url_for('logout') }}" title="Logout"
+        ><img src="{{ url_for('static', filename='assets/exit_icon.png') }}"
+    /></a>
+</nav>
+
+<section id="add_task">
+    <div class="container">
+        <form action="{{ url_for('add_task') }}" method="post">
+            <input
+                type="text"
+                name="task"
+                placeholder="Adicione uma tarefa..."
+                required
+            />
+            <button type="submit">Adicionar tarefa</button>
+        </form>
+    </div>
+</section>
+
+<section id="tarefas">
+    <div class="container">
+        <h2 id="tarefas_01">Tarefas ativas</h2>
+        <ul>
+            {% for task in tasks %}
+            <li>
+                {{ task.task }} {% if not task.done %}
+                <a
+                    href="{{ url_for('complete_task', task_id=task.id) }}"
+                    title="Completar"
+                    id="completar"
+                    ><img
+                        src="{{ url_for('static', filename='assets/checked_icon.png') }}"
+                /></a>
+                {% endif %}
+                <a
+                    href="{{ url_for('delete_task', task_id=task.id) }}"
+                    title="Deletar"
+                    ><img
+                        src="{{ url_for('static', filename='assets/deleted_icon.png') }}"
+                /></a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2 id="tarefas_02">Tarefas completadas</h2>
+        <ul>
+            {% for task in completed_tasks %}
+            <li>
+                {{ task.task }}
+                <a href="{{ url_for('undo_complete', completed_id=task.id) }}"
+                    ><img
+                        src="{{ url_for('static', filename='assets/undo_icon.png') }}"
+                /></a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2 id="tarefas_03">Tarefas deletadas</h2>
+        <ul>
+            {% for task in deleted_tasks %}
+            <li>
+                {{ task.task }}
+                <a href="{{ url_for('undo_delete', deleted_id=task.id) }}"
+                    ><img
+                        src="{{ url_for('static', filename='assets/undo_icon.png') }}"
+                /></a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endblock %}
