@@ -41,7 +41,7 @@
   </p>
 
   <p align="justify">
-    Para rodar esse projeto, basta fazer um clone dele usando o <b>GitHub</b> e depois executar o seguinte comando:.
+    Para rodar esse projeto, basta fazer um clone dele usando o <b>GitHub</b> e depois executar o seguinte comando:
 
   ```
   pip install requirements.txt
