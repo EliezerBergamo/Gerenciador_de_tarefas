@@ -1,27 +1,52 @@
-<h1 align="center">Gerenciador de Tarefas</h1>
+<img src="https://github.com/user-attachments/assets/a8c81d58-4ec5-40c0-8351-f660cf092b3c" alt="logo" width="50"/>
 
 <section>
   <div>
-    <h3>Descrição</h3>
+    <h1>To Do List</h1>
     <p align="justify">
-      Esse site foi desenvolvido com o intuito de mostrar minhas habilidades como desenvolvedor
-      backend utilizando <b>Python</b> e <b>Flask</b>, sendo capaz de fazer um <b>CRUD</b>
-      completo e gerenciando o banco de dados.
+      This site was developed with the intention of showing my skills as a developer
+      backend using <b>Python</b> and <b>Flask</b>, being able to do <b>CRUD</b>
+      complete and managing the database.
     </p>
     <p  align="justify">
-      Mas também desenvolvi o frontend utilizando <b>HTML</b> e <b>CSS</b>.
+      But I also developed the frontend using <b>HTML</b> and <b>CSS</b>.
     </p>
     <p  align="justify">
-      Nesse site tudo que se pode fazer é cadastrar tarefas para fazer, mas é necessário se
-      cadastrar no site, e depois tarefas poderão ser completadas e deletadas, ou desfazer
-      caso clique errado.
+      On this site, all you can do is register tasks to do, but it is necessary to
+      register on the site, and then tasks can be completed and deleted, or undone
+      if you click wrong.
     </p>
-  </div><hr>
+  </div>
 
   <div>
-    <h3>Execução</h3>
+    <h2>Technology</h2>
+    <h4>Frontend</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+    <h4>Backend</h4>
+    <ul>
+      <li>Python 3.12</li>
+      <li>Flask 3.0.3</li>
+    </ul>
+    <h4>Database</h4>
+    <ul>
+      <li>SQLite</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Services Used</h2>
+    <ul>
+      <li>GitHub</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Getting Used</h2>
   <p align="justify">
-    De forma opcional, pode-se criar um ambiente virtual, fazendo o seguinte no terminal:
+    Optionally, you can create a virtual environment by doing the following in the CLI:
 
   ```
   pip install virtualenv
@@ -33,7 +58,7 @@
   </p>
 
   <p align="justify">
-    Para ativar o ambiente virtual, execute o comando, se for ativado corretamente, o nome do ambiente virtual vai aparecer a esquerda no terminal.
+    To activate the virtual environment, execute the command, if activated correctly, the name of the virtual environment will appear on the left in the terminal.
 
   ```
   \venv\Scripts\activate
@@ -41,44 +66,35 @@
   </p>
 
   <p align="justify">
-    Para rodar esse projeto, basta fazer um clone dele usando o <b>GitHub</b> e depois executar o seguinte comando:
+    To run this project, simply make a clone of it using GitHub and then run the following command:
 
   ```
   pip install requirements.txt
   ```
   </p>
-  </div><hr>
+  </div>
 
   <div>
-    <h3>Tecnologias utilizadas</h3>
-    <h4>Frontend</h4>
+    <h2>How to use</h2>
+    <h3>1 - When you access the project, you will see this initial page.</h3>
+    <img src="https://github.com/user-attachments/assets/d5592c31-a9fa-4c63-b70a-e3f0b25003a1" alt="home" width="1200"/>
+    <h3>2 - You can enter with a user or create one.</h3>
+    <img src="https://github.com/user-attachments/assets/b4ed9497-aea1-4b51-b5b8-a6a8d6578630" alt="signup" width="1200"/>
+    <h3>3 - After that, you can create tasks that you have to do.</h3>
+    <img src="https://github.com/user-attachments/assets/5c079966-5597-4028-8c01-6417ed56abee" alt="tasks" width="1200"/>
+  </div>
+
+   <div>
+    <h2>Features</h2>
+    <p>The main features of the application are:</p>
     <ul>
-      <li>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
-      </li>
-    </ul>
-    <h4>Backend</h4>
-    <ul>
-      <li>
-        <a href="https://docs.python.org/pt-br/3/tutorial/">Python</a>
-      </li>
-      <li>
-        <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a>
-      </li>
-    </ul>
-    <h4>Banco de dados</h4>
-    <ul>
-      <li>
-        <a href="https://www.sqlite.org/docs.html">SQLite</a>
-      </li>
+      <li>Create tasks to your day/li>
+      <li>Complete, delete or recovery the taks</li>
     </ul>
   </div>
 
   <div>
-    <h3>Colaboradores</h3>
+    <h2>Authors</h2>
     <ul>
       <li>
         Eliezer Bergamo
@@ -86,7 +102,12 @@
     </ul>
   </div>
 
+  <div>
+    <h2>Versioning</h2>
+    <p>1.0.0</p>
+  </div>
+
   <footer>
-  <p align="center">Todos os direitos reservados &copy Eliezer Bergamo</p>
-</footer>
+    <p align="center">All rights reserved &copy Eliezer Bergamo</p>
+  </footer>
 </section>
