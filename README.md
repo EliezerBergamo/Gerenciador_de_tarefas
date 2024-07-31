@@ -84,11 +84,11 @@
     <img src="https://github.com/user-attachments/assets/5c079966-5597-4028-8c01-6417ed56abee" alt="tasks" width="1200"/>
   </div>
 
-   <div>
+  <div>
     <h2>Features</h2>
     <p>The main features of the application are:</p>
     <ul>
-      <li>Create tasks to your day/li>
+      <li>Create tasks to your day</li>
       <li>Complete, delete or recovery the taks</li>
     </ul>
   </div>
